@@ -1,0 +1,9 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=768000,CODECS="mp4a.40.2, avc1.640028",RESOLUTION=640x360
+https://player02.getcourse.ru/player/da61cf7ccdeedd50fae5156e1512f82c/9d106c8ed11e2901c17935544f83cf38/media/360.m3u8?sid=sid&host=vh-21&user-cdn=cloudflare&v=4%3A2%3A1%3A0&user-id=156555565
+#EXT-X-STREAM-INF:BANDWIDTH=1024000,CODECS="mp4a.40.2, avc1.640028",RESOLUTION=853x480
+https://player02.getcourse.ru/player/da61cf7ccdeedd50fae5156e1512f82c/9d106c8ed11e2901c17935544f83cf38/media/480.m3u8?sid=sid&host=vh-21&user-cdn=cloudflare&v=4%3A2%3A1%3A0&user-id=156555565
+#EXT-X-STREAM-INF:BANDWIDTH=2560000,CODECS="mp4a.40.2, avc1.640028",RESOLUTION=1280x720
+https://player02.getcourse.ru/player/da61cf7ccdeedd50fae5156e1512f82c/9d106c8ed11e2901c17935544f83cf38/media/720.m3u8?sid=sid&host=vh-21&user-cdn=cloudflare&v=4%3A2%3A1%3A0&user-id=156555565
+#EXT-X-STREAM-INF:BANDWIDTH=4096000,CODECS="mp4a.40.2, avc1.640028",RESOLUTION=1920x1080
+https://player02.getcourse.ru/player/da61cf7ccdeedd50fae5156e1512f82c/9d106c8ed11e2901c17935544f83cf38/media/1080.m3u8?sid=sid&host=vh-21&user-cdn=cloudflare&v=4%3A2%3A1%3A0&user-id=156555565

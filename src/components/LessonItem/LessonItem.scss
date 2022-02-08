@@ -1,0 +1,83 @@
+.LessonItem {
+  width: calc(30% - 60px);
+  min-width: 200px;
+  max-width: 500px;
+  padding: 20px 30px;
+  border: 1px solid #6d6565;
+  border-radius: 24px;
+  margin: 20px;
+  box-shadow: 0 0 5px 0 #6d6565;
+
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6d6565;
+    margin: 0 -30px;
+  }
+
+  &-link {
+    display: block;
+    margin: 24px auto 0 auto;
+    padding: 12px 23px;
+    width: fit-content;
+    border: 1px solid #1a62b3;
+    border-radius: 8px;
+    color: #1a62b3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #1a62b3;
+      color: whitesmoke;
+      transition: color 0.3s, background-color 0.5s;
+    }
+  }
+
+  .carousel-root {
+    margin: 16px -30px;
+    padding: 0 60px 48px 60px;
+    border-bottom: 1px solid #6d6565;
+    flex-grow: 1;
+
+    .carousel {
+      overflow: visible;
+    }
+
+    .control-arrow {
+      background-color: rgba(0, 0, 0, 0.2);
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .control-prev {
+      left: -30px;
+    }
+
+    .control-next {
+      right: -30px;
+    }
+
+    .control-dots {
+      bottom: -40px;
+    }
+
+    .dot {
+      background-color: #6d6565;
+    }
+  }
+
+  .carousel-image {
+    max-height: 25vh;
+    width: auto !important;
+    max-width: 100%;
+  }
+}

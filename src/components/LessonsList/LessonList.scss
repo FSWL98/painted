@@ -1,0 +1,11 @@
+.LessonList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__empty {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 24px;
+  }
+}
