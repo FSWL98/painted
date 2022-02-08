@@ -13,13 +13,6 @@ const Header = ({ dispatch } : { dispatch: Dispatch }) => {
 
     const [search, setSearch] = useState('');
 
-    const debouncedSearch = useMemo(
-        () => debounce((value: string) => {
-            handleSearch(value);
-        }, 1000),
-        [],
-    );
-
     const handleSearch = (value: string) => {
         if (search)
             dispatch({
@@ -30,6 +23,13 @@ const Header = ({ dispatch } : { dispatch: Dispatch }) => {
                 searchQuery: value
             });
     };
+
+    const debouncedSearch = useMemo(
+        () => debounce((value: string) => {
+            handleSearch(value);
+        }, 1000),
+        [handleSearch],
+    );
 
     return (
         <header className="header">
