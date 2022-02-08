@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import { baseArray } from '../../baseArray';
 import { State, Dispatch, Action, ProviderProps } from "../../types/types";
 
