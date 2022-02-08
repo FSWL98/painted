@@ -6,6 +6,8 @@ import './Header.scss';
 import { Link } from 'react-router-dom';
 import { Dispatch } from '../../types/types';
 
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 const Header = ({ dispatch } : { dispatch: Dispatch }) => {
 
     const [search, setSearch] = useState('');
@@ -45,7 +47,7 @@ const Header = ({ dispatch } : { dispatch: Dispatch }) => {
                     }}
                 />
                 <button type={"submit"}>
-                    <FontAwesomeIcon icon='search'/>
+                    <FontAwesomeIcon icon={faSearch} />
                 </button>
             </form>
         </header>
