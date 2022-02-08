@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { Dispatch } from '../../types/types';
 
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const Header = ({ dispatch } : { dispatch: Dispatch }) => {
 
@@ -47,7 +48,7 @@ const Header = ({ dispatch } : { dispatch: Dispatch }) => {
                     }}
                 />
                 <button type={"submit"}>
-                    <FontAwesomeIcon icon={faSearch} />
+                    <FontAwesomeIcon icon={ faSearch as IconProp } />
                 </button>
             </form>
         </header>
