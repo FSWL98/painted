@@ -4,8 +4,6 @@ import { useParams } from 'react-router-dom';
 import { baseArray } from '../../baseArray';
 
 import './LessonPage.scss';
-import set = Reflect.set;
-import Header from "../Header/Header";
 import {Carousel} from "react-responsive-carousel";
 
 const LessonPage = () => {

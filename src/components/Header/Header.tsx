@@ -9,6 +9,8 @@ import { Dispatch } from '../../types/types';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
+/* tslint:disable react-hooks/exhaustive-deps */
+
 const Header = ({ dispatch } : { dispatch: Dispatch }) => {
 
     const [search, setSearch] = useState('');
