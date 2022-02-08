@@ -13,22 +13,21 @@ const Header = ({ dispatch } : { dispatch: Dispatch }) => {
 
     const [search, setSearch] = useState('');
 
-    const handleSearch = (value: string) => {
-        if (search)
-            dispatch({
-                type: 'reset_filters'
-            });
-        else dispatch({
-                type: 'filter_name',
-                searchQuery: value
-            });
-    };
-
     const debouncedSearch = useMemo(
         () => debounce((value: string) => {
+            const handleSearch = (value: string) => {
+                if (search)
+                    dispatch({
+                        type: 'reset_filters'
+                    });
+                else dispatch({
+                    type: 'filter_name',
+                    searchQuery: value
+                });
+            };
             handleSearch(value);
         }, 1000),
-        [handleSearch],
+        [],
     );
 
     return (
